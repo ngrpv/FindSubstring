@@ -41,7 +41,7 @@ function FindSubstring(pattern,text){
     var indexArray = new Array();
     textLength = text.length;
     for(var i = 0;i<textLength;i++) {
-        if(table[position][text[i]] != null){
+        if(table[position][text[i]] !== undefined){
             position = table[position][text[i]];
         }else{
             position = 0;
